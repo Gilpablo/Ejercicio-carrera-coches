@@ -1,11 +1,10 @@
 package carreracoches;
 
-public class CarreraCoches {
+public class main {
 
 	public static void main(String[] args) {
+
 		
-		
-	
 	}
 
 }
