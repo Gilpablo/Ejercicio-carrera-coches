@@ -8,27 +8,31 @@ public class Coche {
 	
 	private int distancia_carrera;
 	
-	private boolean estado_coche;
+	private String estado_coche;
 	
-	private int potencia=50;
+	private final int POTENCIA=50;
 	
 	private int velocidad;
 	
 	private int km_recorridos;
 
-	public Coche(String nombre_piloto, int dorsal_piloto, int distancia_carrera, boolean estado_coche, int potencia,
-			int velocidad, int km_recorridos) {
+	public Coche(String nombre_piloto, int dorsal_piloto, int distancia_carrera) {
 		
 		this.nombre_piloto = nombre_piloto;
 		this.dorsal_piloto = dorsal_piloto;
 		this.distancia_carrera = distancia_carrera;
-		this.estado_coche = estado_coche;
-		this.potencia = potencia;
-		this.velocidad = velocidad;
-		this.km_recorridos = km_recorridos;
+		this.estado_coche = "parado";
+		this.velocidad = 0;
+		this.km_recorridos = 0;
 	}
 
+
 	
+	//empezar con los estados del coche
+
+
+
+
 	public String getNombre_piloto() {
 		return nombre_piloto;
 	}
@@ -53,21 +57,15 @@ public class Coche {
 		this.distancia_carrera = distancia_carrera;
 	}
 
-	public boolean isEstado_coche() {
+	public String isEstado_coche() {
 		return estado_coche;
 	}
 
-	public void setEstado_coche(boolean estado_coche) {
+	public void setEstado_coche(String estado_coche) {
 		this.estado_coche = estado_coche;
 	}
 
-	public int getPotencia() {
-		return potencia;
-	}
 
-	public void setPotencia(int potencia) {
-		this.potencia = potencia;
-	}
 
 	public int getVelocidad() {
 		return velocidad;
